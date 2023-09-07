@@ -11,6 +11,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script>
+			// Function to validate the form
+			function validateForm() {
+				var name = document.getElementById("name").value;
+				var email = document.getElementById("email").value;
+				var message = document.getElementById("message").value;
+	
+				if (name === "" || email === "" || message === "") {
+					alert("All fields are required");
+					return false;
+				}
+	
+				return true;
+			}
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -20,7 +36,7 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Projects</a></li>
+							<li><a href="#one">Interests</a></li>
 							<li><a href="#two">About Me</a></li>
 							<li><a href="#three">Contact Me</a></li>
 						</ul>
@@ -35,8 +51,8 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Adam Larson's Profile</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+							<p>Welcome to my homepage. I am a student currently enrolled at SDSU with an estimated graduation year of 2025. 
+								I am currently studying computer science and beginning to focus my studies towards artificial intelligence. </p>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
@@ -49,7 +65,7 @@
 							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
+									<h2>Computer Programming</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
@@ -61,7 +77,7 @@
 							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Feugiat consequat</h2>
+									<h2>Game Development</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
@@ -73,8 +89,8 @@
 							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Photography</h2>
+									<p>In my free time, I enjoy taking photos of landscapes and nature.</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
@@ -133,7 +149,7 @@
 							<p>Feel free to send me a message.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="#" onsubmit="return validateForm()">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -149,7 +165,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><a class="button submit">Send Message</a></li>
 										</ul>
 									</form>
 								</section>
@@ -161,11 +177,7 @@
 										</li>
 										<li>
 											<h3>Discord</h3>
-											<span>Adum#9343</span>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>1 (408) 406-5143</span>
+											<span>adum.__</span>
 										</li>
 										<li>
 											<h3>Social</h3>
@@ -186,7 +198,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Adam Larson's Profile. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Adam Larson's Profile. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>&emsp;License: <a href="http://html5up.net/license">Creative Commons</a> </li>
 					</ul>
 				</div>
 			</footer>
