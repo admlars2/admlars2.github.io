@@ -3489,6 +3489,14 @@ input, select, textarea {
 		margin: 0 auto;
 	}
 
+	.iframe-container, .iframe-container iframe {
+		display: flex;
+		justify-content: center; /* centers horizontally */
+		align-items: center;     /* centers vertically */
+		margin: 0;
+		padding: 0;
+	}
+
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
