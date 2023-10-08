@@ -31,15 +31,24 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Data Analysis</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
+							<!-- <span class="image fit"><img src="images/pic04.jpg" alt="" /></span> -->
+							<p>When I was watching the recent Valorant tournament, I was wondering what the stat distributaion was by agent. All of the quickly available resources that I could find had the stats distributed by player and by match, but I was curious about which agents were doing the best overall and which ones seemed to have the most impact.</p>
+							<p>So I decided to find out for my self using the data provided by <a href="https://https://www.vlr.gg">vlr.gg</a>. In order to do this, I wrote a script to look through all of the games that were played in a specific tournament and combine the data into one dataset. Since there were some games where the data was corrupted, I chose to omit those data points.</p>
+							<p>Here are the results of the data from Valorant Champions 2023:</p>
 							<div class="iframe-container">
 								<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQSifwTDhEml9uobQXL9LWoXGl-S4yyOgJ6Xjwd2R7Mt15S5ZvnBhaVljkHXlWCHw/pubhtml?gid=93540032&amp;single=true&amp;widget=true&amp;headers=false" width="1175" height="510" frameborder="0" scrolling="no" style="border:3px solid #5A4F72"></iframe>
 							</div>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<p>This data is very interesting to look at because you can see who the most played agent was and compare that to the overall stats that people playing the agent had. One of the most interesting points that stood out to me was the number of assists that KAY/O had compared to Sova. Although Sova's arrow and drone show teammates the exact location of where the enemies are, KAY/O ended up with more assists,
+								despite only showing the general area of where they are. 
+							</p>
+							<p>But then I was wondering what the stats looked like for last years (2022) Valorant Champions, so I decided to look at that too:</p>
 							<div class="iframe-container">
 								<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkIcYYSUHabUWeqkacEofvjTn63Nh4qxWFICiakZ025CsFgwKIxr71eO7qy3enUg/pubhtml?gid=1971645227&amp;single=true&amp;widget=true&amp;headers=false" width="1175" height="510" frameborder="0" scrolling="no" style="border:3px solid #5A4F72"></iframe>
 							</div>
+							<p>The first thing that stood out to me was the fact that chamber was picked 115 times compared to the 15 times that he was picked in the most recent Championship. It makes sense considering how much they changed the character after seeing how strong he was, but it was still interesting to see. Another datapoint that I thought was interesting was how little Reyna was picked, even though the people who played her were extremely 
+								successful with her. In both tournaments, she had the highest ACS average. But that data does need to be taken with a grain of salt because she was picked 5 times in the most recent tournament and 2 times in last years tournament.
+							</p>
+							<p>Overall, this was a fun project, because I was able to learn how to get data from websites and I was able to actually see meta shifts from year to year in a better way than simply looking at the pickrate of agents.</p>
 						</div>
 					</section>
 			</div>
